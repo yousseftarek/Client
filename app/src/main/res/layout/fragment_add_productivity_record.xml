@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mylife_mk3.fragments.AddProductivityRecordFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_source"
+        android:text="Source App:"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_source_edit"
+        android:layout_toRightOf="@+id/add_productivity_source"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_date_text"
+        android:textSize="18sp"
+        android:text="Choose Date:"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/add_productivity_source" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/add_productivity_date_button"
+        android:text="10-3-2017"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/add_productivity_date_text"
+        android:layout_below="@+id/add_productivity_source_edit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_time_text"
+        android:textSize="18sp"
+        android:text="Choose Time:"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/add_productivity_date_text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/add_productivity_time_button"
+        android:text="12:45:00"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/add_productivity_time_text"
+        android:layout_below="@+id/add_productivity_date_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_duration_text"
+        android:textSize="18sp"
+        android:text="Choose Duration:"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/add_productivity_time_text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/add_productivity_duration_button"
+        android:textSize="18sp"
+        android:text="01:20:00"
+        android:layout_toRightOf="@+id/add_productivity_duration_text"
+        android:layout_below="@+id/add_productivity_time_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_category_text"
+        android:textSize="18dp"
+        android:text="Category:"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/add_productivity_duration_text"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_category_spinner"
+        android:layout_toRightOf="@+id/add_productivity_category_text"
+        android:layout_below="@+id/add_productivity_duration_button"
+        android:padding="20dp">
+
+    </Spinner>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/add_productivity_radioGroup"
+        android:layout_below="@+id/add_productivity_category_text">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_productivity_productive"
+            android:text="Productive"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_productivity_notProductive"
+            android:text="Not Productive"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_productivity_activity"
+        android:textSize="18sp"
+        android:hint="Activity"
+        android:layout_below="@+id/add_productivity_radioGroup"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/add_productivity_submit"
+        android:layout_below="@+id/add_productivity_activity"
+        android:gravity="center"
+        android:text="Add Record"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mylife_mk3.fragments.AddMealRecordFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_title"
+            android:text="Log Meal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_type"
+            android:layout_below="@+id/add_meal_title"
+            android:text="Type:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_type_spinner"
+            android:layout_toRightOf="@+id/add_meal_type"
+            android:layout_below="@+id/add_meal_title"
+            android:layout_alignBottom="@+id/add_meal_type">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_date"
+            android:layout_below="@+id/add_meal_type"
+            android:text="Date:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_date_button"
+            android:layout_toRightOf="@+id/add_meal_date"
+            android:layout_below="@+id/add_meal_type_spinner"
+            android:layout_alignBottom="@+id/add_meal_date"
+            android:textSize="18sp"
+            android:text="11/12/2017"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_time"
+            android:layout_below="@+id/add_meal_date"
+            android:text="Time:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_time_button"
+            android:layout_toRightOf="@+id/add_meal_time"
+            android:layout_below="@+id/add_meal_date_button"
+            android:layout_alignBottom="@+id/add_meal_time"
+            android:textSize="18sp"
+            android:text="12:59:59"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_duration"
+            android:layout_below="@+id/add_meal_time"
+            android:text="Duration:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_duration_button"
+            android:layout_toRightOf="@+id/add_meal_duration"
+            android:layout_below="@+id/add_meal_time_button"
+            android:layout_alignBottom="@+id/add_meal_duration"
+            android:textSize="18sp"
+            android:text="12:59:59"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_meal_submit"
+            android:layout_below="@+id/add_meal_duration_button"
+            android:textSize="18sp"
+            android:text="Log Meal"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

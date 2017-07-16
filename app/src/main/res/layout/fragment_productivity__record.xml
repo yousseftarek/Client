@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/productivityRecord_layout"
+    android:padding="16dp"
+    android:background="@drawable/borders"
+    android:backgroundTint="@color/colorAccent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productivity_appTitle"
+        android:text="App Title"
+        android:textSize="22sp"
+        android:padding="5dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productivity_record_day_text"
+        android:layout_alignRight="@+id/productivity_appTitle"
+        android:layout_alignEnd="@+id/productivity_appTitle"
+        android:layout_alignParentRight="true"
+        android:text="Mon, 15"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productivity_appTitle"
+        android:id="@+id/productivity_duration"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textSize="18dp"
+        android:text="1h 12m"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productivity_duration"
+        android:id="@+id/productivity_productive"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textSize="16dp"
+        android:text="Not Productive"
+        />
+
+</RelativeLayout>

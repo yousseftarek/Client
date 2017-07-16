@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borders"
+    android:backgroundTint="@color/colorAccent"
+    android:id="@+id/day_record_layout"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_app_text"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="Using {App Name}"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day_record_app_text"
+        android:id="@+id/day_record_app_time"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="For {Duration}"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/day_record_time"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="12:59:59"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_sleep_text_from"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="Sleeping From: "
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_sleep_text_to"
+        android:layout_below="@+id/day_record_sleep_text_from"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="To: "
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day_record_time"
+        android:layout_alignParentRight="true"
+        android:id="@+id/day_record_sleep_time_to"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="12:59:59"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_location_text"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="You were at:"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_position_text"
+        android:layout_below="@+id/day_record_location_text"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="Some Random Street, Some Random City, Some Random Country"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_meal_text"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="Having {Meal}"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_task_text"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/day_record_time"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="Working on: {Task Title}"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_record_task_duration"
+        android:layout_below="@+id/day_record_task_text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="For: {Duration}"
+        android:visibility="gone"/>
+
+</RelativeLayout>

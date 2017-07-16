@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="birth_day">1</integer>
+    <integer name="birth_month">1</integer>
+    <integer name="birth_year">2016</integer>
+</resources>

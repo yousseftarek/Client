@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/location_record_layout"
+
+    android:background="@drawable/borders"
+    android:backgroundTint="#009688">
+    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/location_record_map"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        map:mapType="normal"
+        map:liteMode="true"
+        android:layout_marginBottom="10dp">
+
+    </com.google.android.gms.maps.MapView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_record_map"
+        android:id="@+id/location_record_location_text"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_record_time"
+        android:layout_below="@+id/location_record_location_text"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:text="12:50:40"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_record_provider"
+        android:layout_below="@+id/location_record_time"
+        android:textSize="16sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="GPS Reading"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

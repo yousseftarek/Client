@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mylife_mk3.fragments.ProductivityDayFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+            <!--<com.github.jhonnyx2012.horizontalpicker.HorizontalPicker-->
+                <!--android:id = "@+id/productivityDay_datepicker"-->
+                <!--android:layout_width = "match_parent"-->
+                <!--android:layout_height = "wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerVertical="false"/>-->
+
+            <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+                android:id = "@+id/productivityDay_datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:baseColor="@color/colorPrimaryLight"
+                app:baseTextColor="@color/default_base_text"
+                app:selectedColor="@color/colorAccent"
+                app:selectedTextColor="@color/default_selected_text"
+                app:showTitle="true"
+                app:showFullDate="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productivityDay_noRecords"
+                android:layout_below="@+id/productivityDay_datepicker"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="No Records"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/productivityDay_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productivityDay_datepicker"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/productivityDay_datepicker"
+                android:id="@+id/productivityDay_listView"
+                android:dividerHeight="10.0dp"
+                android:divider="@color/white"
+                android:layout_marginBottom="45dp"/>
+        </RelativeLayout>
+
+</FrameLayout>

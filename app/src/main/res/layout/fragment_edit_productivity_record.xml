@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_productivityRecord_appName"
+            android:text="App Name"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/edit_productivityRecord_startTime"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_productivityRecord_duration"
+            android:text="Duration: "
+            android:textSize="16dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activity description"
+            android:textSize="16sp"
+            android:id="@+id/edit_productivityRecord_activitydescription"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_productivityRecord_radioGroup"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_productivityRecord_productive"
+                android:text="Productive"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_productivityRecord_notProductive"
+                android:text="Not Productive"
+                android:textSize="16sp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/edit_productivityRecord_cancel"-->
+            <!--android:text="Cancel"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:backgroundTint="@color/white"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/edit_productivityRecord_update"-->
+            <!--android:text="Update"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:backgroundTint="@color/white"-->
+            <!--/>-->
+    </LinearLayout>
+</LinearLayout>

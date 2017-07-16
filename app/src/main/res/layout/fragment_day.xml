@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/borders"
+            android:id="@+id/day_calendar_view"
+            android:backgroundTint="@color/percentageFillColor"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:text="Calendar View"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:background="@drawable/borders"-->
+            <!--android:id="@+id/day_timeline_view"-->
+            <!--android:backgroundTint="@color/percentageTextBackground"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="2dp"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="26sp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Timeline View"-->
+                <!--android:textColor="@color/white"/>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

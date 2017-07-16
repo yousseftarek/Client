@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/borders"
+    android:backgroundTint="#447393">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleep_record_from_layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_record_from"
+            android:text="Start:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_record_startDate"
+            android:text="3-4-2017"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_record_startTime"
+            android:text="12:00:29"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleep_record_end_layout"
+        android:layout_below="@+id/sleep_record_from_layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_record_end"
+            android:text="End:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_record_endDate"
+            android:text="3-4-2017"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleep_record_endTime"
+            android:text="12:00:29"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleep_record_duration"
+        android:layout_below="@+id/sleep_record_end_layout"
+        android:text="12:00:29"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+</RelativeLayout>

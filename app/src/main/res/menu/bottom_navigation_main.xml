@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="MyProfile" />
+    <item
+        android:id="@+id/action_stats"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/chart"
+        android:title="MyStats" />
+    <item
+        android:id="@+id/action_day"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/day"
+        android:title="MyDay" />
+</menu>

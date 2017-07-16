@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_weight="0.23" 
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Please Login With Your Registered Email"/>
+
+    <EditText
+        android:id="@+id/signInEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="example@google.com"
+        android:text="jthomas0@goo.gl"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signinPassword"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:text="password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Sign In"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpButton"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar_signin"
+        style="?android:attr/progressBarStyle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

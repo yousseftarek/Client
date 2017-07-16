@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--tools:context="com.example.mylife_mk3.activities.DayCalendarViewActivity"-->
+    <!--tools:showIn="@layout/activity_day_calendar_view">-->
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mylife_mk3.activities.DayCalendarViewActivity"
+    tools:showIn="@layout/activity_day_calendar_view"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+        android:id = "@+id/day_calendar_view_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:baseColor="@color/colorPrimaryLight"
+        app:baseTextColor="@color/default_base_text"
+        app:selectedColor="@color/colorAccent"
+        app:selectedTextColor="@color/default_selected_text"
+        app:showTitle="true"
+        app:showFullDate="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_calendar_view_list"
+        android:layout_below="@+id/day_calendar_view_calendar"
+        android:dividerHeight="5.0dp"
+        android:divider="@color/white"
+        android:visibility="gone">
+    </ListView>
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/day_calendar_view_progress"
+        android:layout_below="@+id/day_calendar_view_calendar"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_calendar_view_norecords"
+        android:layout_below="@+id/day_calendar_view_calendar"
+        android:text="No Records"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+<!--</android.support.constraint.ConstraintLayout>-->

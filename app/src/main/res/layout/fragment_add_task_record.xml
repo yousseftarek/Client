@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mylife_mk3.fragments.AddTaskRecordFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_layout_title"
+            android:text="New Task"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_title"
+            android:layout_below="@+id/add_task_layout_title"
+            android:text="Title:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_title_edit"
+            android:layout_below="@+id/add_task_layout_title"
+            android:layout_toRightOf="@+id/add_task_title"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_description"
+            android:layout_below="@+id/add_task_title"
+            android:text="Description:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_description_edit"
+            android:layout_below="@+id/add_task_description"
+            android:maxLines="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_date"
+            android:layout_below="@+id/add_task_description_edit"
+            android:text="Date:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_date_button"
+            android:layout_toRightOf="@+id/add_task_date"
+            android:layout_below="@+id/add_task_description_edit"
+            android:layout_alignBottom="@+id/add_meal_date"
+            android:textSize="18sp"
+            android:text="11/12/2017"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_time"
+            android:layout_below="@+id/add_task_date"
+            android:text="Time:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_time_button"
+            android:layout_toRightOf="@+id/add_task_time"
+            android:layout_below="@+id/add_task_date_button"
+            android:layout_alignBottom="@+id/add_task_time"
+            android:textSize="18sp"
+            android:text="12:59:59"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_duration"
+            android:layout_below="@+id/add_task_time"
+            android:text="Duration:"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_duration_button"
+            android:layout_toRightOf="@+id/add_task_duration"
+            android:layout_below="@+id/add_task_time_button"
+            android:layout_alignBottom="@+id/add_task_duration"
+            android:textSize="18sp"
+            android:text="12:59:59"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_task_submit"
+            android:layout_below="@+id/add_task_duration_button"
+            android:textSize="18sp"
+            android:text="Log Task"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </RelativeLayout>
+
+</FrameLayout>

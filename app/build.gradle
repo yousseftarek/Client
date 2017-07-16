@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.mylife_mk3"
+        minSdkVersion 22
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.zurche:plain-pie:v0.2.2'
+    compile 'com.github.jhonnyx2012:horizontal-picker:1.0.5'
+    compile 'com.github.gastricspark:scrolldatepicker:0.0.1'
+    compile 'com.robinhood.spark:spark:1.1.2'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.2'
+    compile 'com.google.android.gms:play-services-maps:10.2.1'
+    compile 'com.google.android.gms:play-services-location:10.2.1'
+    compile 'com.wdullaer:materialdatetimepicker:3.1.3'
+    compile 'biz.kasual:materialnumberpicker:1.2.1'
+    compile 'com.github.sundeepk:compact-calendar-view:2.0.1'
+    compile 'com.github.vajro:MaterialDesignLibrary:1.6'
+    compile 'com.ultramegasoft.radarchart:radar-chart:0.1.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.dzaitsev.android.widget:radarchartview:0.1.0'
+    testCompile 'junit:junit:4.12'
+}
